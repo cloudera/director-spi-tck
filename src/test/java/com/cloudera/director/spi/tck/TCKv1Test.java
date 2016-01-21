@@ -16,11 +16,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.jar.JarFile;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.TemporaryFolder;
 
 public class TCKv1Test {
 
