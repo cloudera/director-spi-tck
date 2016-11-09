@@ -24,7 +24,7 @@ import java.util.logging.Logger;
 
 
 /**
- * Main entry point for the TCK as a command line tool
+ * Main entry point for the TCK as a command line tool.
  */
 public class Runner {
 

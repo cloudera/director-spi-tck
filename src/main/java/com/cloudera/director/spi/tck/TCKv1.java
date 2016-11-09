@@ -26,8 +26,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
-import java.net.Socket;
 import java.net.MalformedURLException;
+import java.net.Socket;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.security.AccessController;
@@ -44,7 +44,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 /**
- * Validate an implementation of the v1 of the Director SPI
+ * Validates an implementation of the v1 of the Director SPI.
  */
 public class TCKv1 implements TCK {
 

@@ -5,12 +5,12 @@ package com.cloudera.director.spi.tck.util;
 import java.util.concurrent.TimeUnit;
 
 /**
- * A simplified version of the Guava Stopwatch for measuring timeouts
+ * A simplified version of the Guava Stopwatch for measuring timeouts.
  */
 public class Stopwatch {
 
   /**
-   * Create a new instance that records the moment when it was created
+   * Creates a new instance that records the moment when it was created.
    */
   public static Stopwatch createStarted() {
     return new Stopwatch();
@@ -23,7 +23,7 @@ public class Stopwatch {
   }
 
   /**
-   * Compute the time between stopwatch creation and now
+   * Computes the time between stopwatch creation and now.
    */
   public long elapsed(TimeUnit desiredUnit) {
     return desiredUnit.convert(elapsedNanos(), TimeUnit.NANOSECONDS);

@@ -10,7 +10,7 @@ import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
 /**
- * A JUL formatter that puts the entire content on a single line
+ * A JUL formatter that puts the entire content on a single line.
  */
 public class SingleLineFormatter extends Formatter {
 

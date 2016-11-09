@@ -8,7 +8,7 @@ public final class Preconditions {
   }
 
   /**
-   * Check if the first argument is null or not
+   * Checks if the first argument is null or not.
    *
    * @return the argument unchanged if not null
    * @throws java.lang.NullPointerException if the argument is null

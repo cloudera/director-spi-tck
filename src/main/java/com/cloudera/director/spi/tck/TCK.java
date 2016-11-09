@@ -7,7 +7,7 @@ import com.typesafe.config.Config;
 import java.io.File;
 
 /**
- * A generic TCK for Director SPI implementations
+ * A generic TCK for Director SPI implementations.
  */
 public interface TCK {
 

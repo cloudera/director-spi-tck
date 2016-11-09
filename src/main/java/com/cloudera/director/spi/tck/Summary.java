@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * An object that collects validation errors and warnings
+ * An object that collects validation errors and warnings.
  */
 public class Summary {
 

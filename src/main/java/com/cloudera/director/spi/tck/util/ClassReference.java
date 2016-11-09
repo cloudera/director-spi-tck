@@ -5,7 +5,7 @@ package com.cloudera.director.spi.tck.util;
 import static com.cloudera.director.spi.tck.util.Preconditions.checkNotNull;
 
 /**
- * A wrapper for a canonical class name
+ * A wrapper for a canonical class name.
  */
 public class ClassReference {
 
