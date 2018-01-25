@@ -1,14 +1,13 @@
-// Copyright (c) 2015 Cloudera, Inc.
+// Copyright (c) 2017 Cloudera, Inc.
 
 package com.cloudera.director.spi.tck.util;
 
 import static org.junit.Assert.assertEquals;
-
-import com.cloudera.director.spi.v1.model.ConfigurationProperty;
-import com.cloudera.director.spi.v1.model.LocalizationContext;
-import com.cloudera.director.spi.v1.model.util.DefaultLocalizationContext;
-import com.cloudera.director.spi.v1.model.util.SimpleConfigurationPropertyBuilder;
-import com.cloudera.director.spi.v1.util.ConfigurationPropertiesUtil;
+import com.cloudera.director.spi.v2.model.ConfigurationProperty;
+import com.cloudera.director.spi.v2.model.LocalizationContext;
+import com.cloudera.director.spi.v2.model.util.DefaultLocalizationContext;
+import com.cloudera.director.spi.v2.model.util.SimpleConfigurationPropertyBuilder;
+import com.cloudera.director.spi.v2.util.ConfigurationPropertiesUtil;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import com.typesafe.config.ConfigParseOptions;
@@ -34,7 +33,7 @@ public class ConfigFragmentWrapperTest {
 
   // Fully qualifying class name due to compiler bug
   public static enum TestPropertyToken
-      implements com.cloudera.director.spi.v1.model.ConfigurationPropertyToken {
+      implements com.cloudera.director.spi.v2.model.ConfigurationPropertyToken {
 
     TEST_REQUIRED(new SimpleConfigurationPropertyBuilder()
         .configKey("test.required")

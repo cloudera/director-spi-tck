@@ -104,6 +104,7 @@ public class PluginMetadata {
   static {
     LAUNCHER_INTERFACE_VERSIONS = new HashMap<String, String>();
     LAUNCHER_INTERFACE_VERSIONS.put("com.cloudera.director.spi.v1.provider.Launcher", "v1");
+    LAUNCHER_INTERFACE_VERSIONS.put("com.cloudera.director.spi.v2.provider.Launcher", "v2");
     // add future interface versions here
   }
 

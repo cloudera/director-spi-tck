@@ -6,6 +6,7 @@ import com.cloudera.director.spi.tck.PluginMetadata;
 import com.cloudera.director.spi.tck.Summary;
 import com.cloudera.director.spi.tck.TCK;
 import com.cloudera.director.spi.tck.TCKv1;
+import com.cloudera.director.spi.tck.TCKv2;
 import com.cloudera.director.spi.tck.util.SingleLineFormatter;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
@@ -35,6 +36,7 @@ public class Runner {
   static {
     Map<String, TCK> validators = new HashMap<String, TCK>();
     validators.put("v1", new TCKv1());
+    validators.put("v2", new TCKv2());
 
     TCKS = Collections.unmodifiableMap(validators);
   }

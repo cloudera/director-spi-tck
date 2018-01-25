@@ -1,14 +1,14 @@
-// Copyright (c) 2015 Cloudera, Inc.
+// Copyright (c) 2017 Cloudera, Inc.
 
 package com.cloudera.director.spi.tck.util;
 
 import static com.cloudera.director.spi.tck.util.Preconditions.checkNotNull;
 
-import com.cloudera.director.spi.v1.model.ConfigurationProperty;
-import com.cloudera.director.spi.v1.model.ConfigurationPropertyToken;
-import com.cloudera.director.spi.v1.model.Configured;
-import com.cloudera.director.spi.v1.model.LocalizationContext;
-import com.cloudera.director.spi.v1.util.ConfigurationPropertiesUtil;
+import com.cloudera.director.spi.v2.model.ConfigurationProperty;
+import com.cloudera.director.spi.v2.model.ConfigurationPropertyToken;
+import com.cloudera.director.spi.v2.model.Configured;
+import com.cloudera.director.spi.v2.model.LocalizationContext;
+import com.cloudera.director.spi.v2.util.ConfigurationPropertiesUtil;
 import com.typesafe.config.Config;
 
 import java.util.Collections;
@@ -19,10 +19,10 @@ import java.util.NoSuchElementException;
 import java.util.logging.Logger;
 
 /**
- * Wrap a HOCON config fragment object as an SPI configured object.
+ * Wrap a HOCON config fragment object as an SPI V2 configured object.
  *
  * @see com.typesafe.config.Config
- * @see com.cloudera.director.spi.v1.model.Configured
+ * @see com.cloudera.director.spi.v2.model.Configured
  */
 public class ConfigFragmentWrapper implements Configured {
 
@@ -65,7 +65,7 @@ public class ConfigFragmentWrapper implements Configured {
 
   @Override
   public String getConfigurationValue(ConfigurationPropertyToken token,
-      LocalizationContext localizationContext) {
+                                      LocalizationContext localizationContext) {
     return getConfigurationValue(token.unwrap(), localizationContext);
   }
 
@@ -78,7 +78,7 @@ public class ConfigFragmentWrapper implements Configured {
    */
   @Override
   public String getConfigurationValue(ConfigurationProperty property,
-      LocalizationContext localizationContext) {
+                                      LocalizationContext localizationContext) {
     String configKey = property.getConfigKey();
 
     if (config.hasPath(configKey)) {
