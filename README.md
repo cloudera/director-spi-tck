@@ -1,11 +1,11 @@
-# Cloudera Director - Cloud Provider TCK
+# Cloudera Altus Director - Cloud Provider TCK
 
 This technology compatibility kit (TCK) checks that an implementation of a
-cloud provider plugin for [Cloudera Director][cd] complies with expectations for
+cloud provider plugin for [Cloudera Altus Director][cd] complies with expectations for
 plugins and works correctly.
 
 The TCK contains one set of tests for each version of the
-[Cloudera Director plugin SPI][spi].
+[Cloudera Altus Director plugin SPI][spi].
 
 # Building
 
