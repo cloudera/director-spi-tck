@@ -19,7 +19,7 @@ import java.util.jar.JarFile;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TCKv1Test {
+public class TCKv2Test {
 
   private static final ConfigParseOptions CONFIG_PARSER_OPTIONS = ConfigParseOptions.defaults()
       .setSyntax(ConfigSyntax.CONF)
@@ -35,7 +35,7 @@ public class TCKv1Test {
 
   @Test
   public void testValidateByonProvider() throws Exception {
-    TCK tck = new TCKv1();
+    TCK tck = new TCKv2();
 
     Config config = ConfigFactory
         .parseResourcesAnySyntax("test.byon.conf", CONFIG_PARSER_OPTIONS)

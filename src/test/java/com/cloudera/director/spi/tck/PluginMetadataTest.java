@@ -30,12 +30,12 @@ public class PluginMetadataTest {
 
     Set<String> spiVersions = metadata.getSpiVersions();
     assertEquals(1, spiVersions.size());
-    assertEquals("v1", spiVersions.iterator().next());
+    assertEquals("v2", spiVersions.iterator().next());
 
-    List<ClassReference> launcherClasses = metadata.getLauncherClasses("v1");
+    List<ClassReference> launcherClasses = metadata.getLauncherClasses("v2");
     assertEquals(1, launcherClasses.size());
     assertEquals("BYONLauncher",
-                 metadata.getLauncherClasses("v1").iterator().next().getSimpleClassName());
+                 metadata.getLauncherClasses("v2").iterator().next().getSimpleClassName());
 
     assertTrue(metadata.getClasses().contains("com.cloudera.director.byon.BYONLauncher"));
     assertTrue(metadata.getFiles()
