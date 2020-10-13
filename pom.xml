@@ -21,7 +21,7 @@
         <director-spi-v2.version>2.2.1</director-spi-v2.version>
         <typesafe-config.version>1.2.0</typesafe-config.version>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <commons.io.version>2.5</commons.io.version>
     </properties>
 
