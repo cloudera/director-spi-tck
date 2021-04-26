@@ -22,7 +22,7 @@
         <typesafe-config.version>1.2.0</typesafe-config.version>
 
         <junit.version>4.12</junit.version>
-        <commons.io.version>2.5</commons.io.version>
+        <commons.io.version>2.7</commons.io.version>
     </properties>
 
     <dependencies>
